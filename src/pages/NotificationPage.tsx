@@ -3,9 +3,7 @@ import {
   getAcceptedFriendRequests,
   getPendingFriendRequests,
   acceptFriendRequest,
-  rejectFriendRequest
 } from "../lib/api";
-import { useEffect } from "react";
 import { BellIcon, ClockIcon, MessageSquareIcon, UserCheckIcon } from "lucide-react";
 import NoNotificationsFound from "../components/NoNotificationFound";
 
@@ -17,7 +15,7 @@ function NotificationPage() {
     queryFn: getAcceptedFriendRequests,
   });
 
-  const { data: incomingRequests = [], isLoading: loadingPendingFriendRequests } = useQuery({
+  const { data: incomingRequests = []} = useQuery({
     queryKey: ["pendingFriendRequests"],
     queryFn: getPendingFriendRequests,
   });
