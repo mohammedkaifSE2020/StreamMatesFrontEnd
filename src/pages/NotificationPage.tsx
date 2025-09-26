@@ -132,7 +132,7 @@ function NotificationPage() {
               </section>
             )}
 
-            {incomingRequests.data.length === 0 && acceptedRequests.data.length === 0 && (
+            {incomingRequests.data?.length === 0 && acceptedRequests.data?.length === 0 && (
               <NoNotificationsFound />
             )}
           </>
