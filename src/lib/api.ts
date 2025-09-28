@@ -16,8 +16,12 @@ export const signup = async (signUpdata: any) => {
 
 
 export const login = async (logindata:any) => {
-    const res = await axiosInstance.post("/auth/login", logindata);
-    return res.data;
+    try {
+        const res = await axiosInstance.post("/auth/login", logindata);
+                return res.data;
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 export const logout = async () => {
