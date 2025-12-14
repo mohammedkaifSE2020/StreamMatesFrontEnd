@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useLogin from "../hooks/useLogin";
-import { Link, ShipWheelIcon } from "lucide-react";
+import { ShipWheelIcon } from "lucide-react";
+import { Link } from "react-router";
 
 
 function LoginPage() {
@@ -93,7 +94,7 @@ function LoginPage() {
                     <p className="text-sm">
                       Don't have an account?{" "}
                       <Link to="/signup" className="text-primary hover:underline">
-                        Create one here
+                        Create one
                       </Link>
                     </p>
                   </div>
