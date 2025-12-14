@@ -93,7 +93,7 @@ function LoginPage() {
                     <p className="text-sm">
                       Don't have an account?{" "}
                       <Link to="/signup" className="text-primary hover:underline">
-                        Create one
+                        Create one here
                       </Link>
                     </p>
                   </div>

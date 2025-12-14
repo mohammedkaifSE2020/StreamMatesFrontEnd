@@ -79,6 +79,7 @@ function App() {
           path="/onBoarding"
           element={isAuthenticated ? <OnboardingPage /> : <Navigate to="/login" />}
         />
+        
       </Routes>
 
       <Toaster />
